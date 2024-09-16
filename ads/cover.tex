@@ -2,24 +2,38 @@
 
 \begin{titlepage}
 	\begin{longtable}{p{8cm} p{8cm}}
-		 & \raggedleft {\raisebox{\ht\strutbox-\totalheight}{\includegraphics[height=2.5cm]{images/cover/logo-dhbw.pdf}}} \\
+		\raggedright {\raisebox{\ht\strutbox-\totalheight}{\includegraphics[height=2.5cm]{images/cover/logo-dhbw.pdf}}} &
+		
 	\end{longtable}
-	% \enlargethispage{20mm}
-	\doublespacing{
-		\vspace*{20mm}	{\LARGE\textbf \documentTitle }}\\
+	\enlargethispage{20mm}
+	\begin{center}
+		\doublespacing{
+		\vspace*{12mm}	{\LARGE\textbf \documentTitle }}\\
+		\vspace*{12mm}	{\large\textbf {\documentTypePhrase}}\\
+		
+		
+		\IfStrEq{\showLecture}{true}{
+			\vspace*{12mm}	\lecturePhrase\\
+			\vspace*{0mm}		{\textbf \lecture}\\
+		}
 
-
-	\vspace*{20mm}
-
-	{\LARGE \documentAuthor} \\
-
-	\vspace*{5mm}
-
-	{\LARGE Ausarbeitung für das Integrationsseminar \\ im Studiengang Allgemeine Informatik} \\
-
-	\vspace*{5mm}
-	{\LARGE Betreuer: Dr. Christopher Reichstein, Dr. Andreas Mahr} \\
-
+		\vspace*{12mm}	\departmentPhrase{} \department\\
+    \vspace*{0mm}		\locationUniversityPhrase{} \locationUniversity\\
+		\vspace*{12mm}	\documentAuthorPhrase\\
+		\vspace*{3mm}		{\large\textbf \documentAuthor}\\
+		\vspace*{12mm}	\releaseDate\\
+	\end{center}
 	\vfill
-	\hfill {\large September 2024}\\
+	\begin{spacing}{1.2}
+	\begin{tabbing}
+		mmmmmmmmmmmmmmmmmmmmmmmmmm             \= \kill
+		%\textbf{\documentPeriodPhrase}       \>  \documentPeriod\\
+		\textbf{ \coursePhrase}  \>  \course\\
+
+
+		\textbf{ \tutorPhrase}               \>  \tutor\\
+		\textbf{          }               \>   Prof.\ Dr.\ Andreas Mahr\\
+
+	\end{tabbing}
+	\end{spacing}
 \end{titlepage}

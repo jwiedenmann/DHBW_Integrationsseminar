@@ -2,65 +2,65 @@
 
 \chapter{Methodik}
 
-Um die Fragestellung „Kann ein \ac{LLM} eine Vorauswahl von Bewerber treffen“ zu beantworten, 
+Um die Fragestellung „Kann ein \acs{LLM} eine Vorauswahl von Bewerber treffen“ zu beantworten, 
 wurde ein experimenteller Ansatz gewählt, welcher anschließend qualitativ bewertet wird. 
-Das Experiment simuliert einen Chatbot mittels \ac{LLM}, in dem das \ac{LLM} dazu verwendet wird, 
+Das Experiment simuliert einen Chatbot mittels \acs{LLM}, in dem das \acs{LLM} dazu verwendet wird, 
 eine Reihe von generierten Fragen auf Basis der Stellenausschreibungen,
 der Anweisungen und den Antworten des Bewerbers zu generieren und anhand den Antworten des Bewerbers 
-diesen zu bewerten. Ziel des Experiments ist es, zu testen, ob das \ac{LLM} durch diese Interaktionen 
+diesen zu bewerten. Ziel des Experiments ist es, zu testen, ob das \acs{LLM} durch diese Interaktionen 
 sinnvolle Rückschlüsse auf die Eignung von Bewerbern ziehen und eine Vorauswahl treffen kann. 
-Die zentrale Hypothese ist, dass ein \ac{LLM} in der Lage ist, aus den Antworten der Bewerber automatisierte Bewertungen zu generieren, die es ermöglichen, weniger geeignete 
+Die zentrale Hypothese ist, dass ein \acs{LLM} in der Lage ist, aus den Antworten der Bewerber automatisierte Bewertungen zu generieren, die es ermöglichen, weniger geeignete 
 Bewerber frühzeitig auszusortieren. 
 
 
 Das Experiment wurde unter kontrollierten Bedingungen durchgeführt, da die Teilnehmenden nicht aktiv auf Stellensuche waren. 
-Das \ac{LLM} wurde mittels eines initialen Prompts bei allen Teilnehmenden auf dieselbe Stellenbeschreibung 
+Das \acs{LLM} wurde mittels eines initialen Prompts bei allen Teilnehmenden auf dieselbe Stellenbeschreibung 
 für eine IT-Position als .NET-Softwareentwickler angepasst. Der initiale Prompt blieb in allen 
 Durchläufen für die unterschiedlichen Teilnehmenden gleich. Die Teilnehmer konnten den initialen Prompt und die Stellenbeschreibung vor und während 
 des Experiments nicht einsehen. 
-Der initiale Prompt des \ac{LLM} folgte dem „Flipped Interaction“-Muster, bei dem das \ac{LLM} basierend 
+Der initiale Prompt des \acs{LLM} folgte dem „Flipped Interaction“-Muster, bei dem das \acs{LLM} basierend 
 auf der Stellenbeschreibung und Anweisungen spezifische Fragen stellte, bis es in der Lage war, 
 eine Bewertung abzugeben \cite{white2023promptpatterncatalogenhance}. Ziel war es, die Eignung der Bewerber in den Disziplinen 
 „Fachliche Kompetenz“, „Problemlösefähigkeit“, „Konfliktlösefähigkeit“ und „Teamfähigkeit“ zu 
-bewerten. Das \ac{LLM} wurde angewiesen, für jede dieser Disziplinen eine Punktzahl zwischen 1 und 10 
-zu vergeben, basierend auf einer qualitativen Auswertung der Antworten. Darüber hinaus wurde das \ac{LLM} 
+bewerten. Das \acs{LLM} wurde angewiesen, für jede dieser Disziplinen eine Punktzahl zwischen 1 und 10 
+zu vergeben, basierend auf einer qualitativen Auswertung der Antworten. Darüber hinaus wurde das \acs{LLM} 
 angewiesen, dem Bewerber eine Gesamtbewertung zwischen 1 und 10 zu geben. Der verwendete Prompt 
 ist in Anlage A einzusehen. 
 
 
-Das Experiment wurde an einem Computer durchgeführt, auf dem ausschließlich die vom \ac{LLM} 
+Das Experiment wurde an einem Computer durchgeführt, auf dem ausschließlich die vom \acs{LLM} 
 generierten Fragen sowie ein Eingabefeld für die Antworten der Teilnehmenden angezeigt wurden. 
 Diese standardisierte Umgebung wurde bewusst gewählt, um eine gleichbleibende Interaktion zwischen 
-den Teilnehmenden und dem \ac{LLM} zu gewährleisten und so die Vergleichbarkeit der Ergebnisse 
+den Teilnehmenden und dem \acs{LLM} zu gewährleisten und so die Vergleichbarkeit der Ergebnisse 
 sicherzustellen. 
 
 
 Zehn Personen im Alter zwischen 21 und 35 Jahren nahmen an dem Experiment teil. 
 Sieben dieser Personen kamen aus der IT-Branche, wobei nicht alle von ihnen als .NET-Entwickler tätig waren, 
 jedoch potenziell die Anforderungen der zu bewertenden Stelle erfüllten. Diese Gruppe 
-repräsentierte die Zielgruppe, die das \ac{LLM} in der Bewerbervorauswahl nicht aussortieren sollte und 
+repräsentierte die Zielgruppe, die das \acs{LLM} in der Bewerbervorauswahl nicht aussortieren sollte und 
 deren Antworten mit höheren Scores bewertet werden sollten. Zusätzlich wurde eine Kontrollgruppe, 
 bestehend aus drei Personen, die wenig oder gar keinen Bezug zur Softwareentwicklung hatten, einbezogen. 
-Diese Gruppe diente dazu, das Verhalten des \ac{LLM} in einem weniger fachspezifischen Kontext zu 
+Diese Gruppe diente dazu, das Verhalten des \acs{LLM} in einem weniger fachspezifischen Kontext zu 
 testen und als Vergleichsgruppe zu den IT-Teilnehmern zu fungieren. 
 
 
 Die einzelnen Experimente fanden im Zeitraum vom 01.09.2024 bis 07.09.2024 statt. Den 
 Teilnehmenden wurde vor Beginn des Experiments erklärt, dass sie sich auf die ausgeschriebene 
 Stelle als .NET-Entwickler bewerben und nun das Screen-Interview durchführen, wobei die Annahme 
-galt, dass sie die Stelle erhalten möchten. Die vom \ac{LLM} generierten Fragen sowie die Antworten der 
+galt, dass sie die Stelle erhalten möchten. Die vom \acs{LLM} generierten Fragen sowie die Antworten der 
 Teilnehmer wurden in deutscher Sprache verfasst. Die Teilnehmer beantworteten die Fragen so lange, 
-bis das \ac{LLM} die Bewertung ausgab. 
+bis das \acs{LLM} die Bewertung ausgab. 
 
 
-Die erhobenen Daten umfassten die generierten Fragen des \ac{LLM}, die Antworten der Teilnehmenden auf 
+Die erhobenen Daten umfassten die generierten Fragen des \acs{LLM}, die Antworten der Teilnehmenden auf 
 die Fragen sowie die abschließenden Bewertungen. Diese bestanden aus einer numerischen Punktzahl 
 für jede Disziplin und einer kurzen textuellen Zusammenfassung der Leistung des Bewerbers. 
-Diese Daten wurden qualitativ ausgewertet, um zu analysieren, inwieweit das \ac{LLM} in der Lage war, 
+Diese Daten wurden qualitativ ausgewertet, um zu analysieren, inwieweit das \acs{LLM} in der Lage war, 
 fundierte, stellenbezogene Rückschlüsse auf die Eignung der Teilnehmenden zu ziehen. Der 
 Schwerpunkt der Analyse lag auf der Untersuchung der Interaktion zwischen den generierten Fragen 
-des \ac{LLM}, den Antworten der Teilnehmenden und der Bewertung des \ac{LLM}, um Rückschlüsse auf die 
-Effektivität der Vorauswahl durch das \ac{LLM} zu ziehen. 
+des \acs{LLM}, den Antworten der Teilnehmenden und der Bewertung des \acs{LLM}, um Rückschlüsse auf die 
+Effektivität der Vorauswahl durch das \acs{LLM} zu ziehen. 
 
 
 

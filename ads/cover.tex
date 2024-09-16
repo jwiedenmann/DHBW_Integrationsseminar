@@ -2,56 +2,21 @@
 
 \begin{titlepage}
 	\begin{longtable}{p{8cm} p{8cm}}
-		\raggedright {\raisebox{\ht\strutbox-\totalheight}{\includegraphics[height=2.5cm]{images/cover/logo-dhbw.pdf}}} &
-		% no company logo for semester paper and special documents
-		\ifDocType{T2\_3100}{}{%
-			\ifSpecialDocument{}{%
-				\raggedleft {\raisebox{\ht\strutbox-\totalheight}{\includegraphics[height=2.5cm]{images/cover/logo-company.png}}}
-			}%
-		}%
+		 & \raggedleft {\raisebox{\ht\strutbox-\totalheight}{\includegraphics[height=2.5cm]{images/cover/logo-dhbw.pdf}}} \\
 	\end{longtable}
-	\enlargethispage{20mm}
-	\begin{center}
-		\doublespacing{
-		\vspace*{12mm}	{\LARGE\textbf \documentTitle }}\\
-		\vspace*{12mm}	{\large\textbf {\documentTypePhrase}}\\
-		
-		% degre only for bachelor thesis
-		\ifDocType{T2\_3300}{
-			\vspace*{12mm}	\degreePhrase\\
-			\vspace*{3mm}		{\textbf \degree}\\
-		}
+	% \enlargethispage{20mm}
+	\doublespacing{
+		\vspace*{20mm}	{\LARGE\textbf \documentTitle }}\\
 
-		\IfStrEq{\showLecture}{true}{
-			\vspace*{12mm}	\lecturePhrase\\
-			\vspace*{0mm}		{\textbf \lecture}\\
-		}
-
-		\vspace*{12mm}	\departmentPhrase{} \department\\
-    \vspace*{0mm}		\locationUniversityPhrase{} \locationUniversity\\
-		\vspace*{12mm}	\documentAuthorPhrase\\
-		\vspace*{3mm}		{\large\textbf \documentAuthor}\\
-		\vspace*{12mm}	\releaseDate\\
-	\end{center}
 	\vfill
-	\begin{spacing}{1.2}
-	\begin{tabbing}
-		mmmmmmmmmmmmmmmmmmmmmmmmmm             \= \kill
-		\textbf{\documentPeriodPhrase}       \>  \documentPeriod\\
-		\textbf{\matriculationNumberPhrase, \coursePhrase}  \>  \matriculationNumber, \course\\
 
-		% no company for the semester paper and special documents
-		\ifDocType{T2\_3100}{}{%
-			\ifSpecialDocument{}{%
-				\textbf{\companyPhrase}                  \>  \companyName, \companyLocation\\
-			}%
-		}%
-		\textbf{\tutorPhrase}               \>  \tutor\\
+	{\LARGE \documentAuthor} \\
 
-		% evaluator only for bachelor thesis
-		\ifDocType{T2\_3300}{%
-			\textbf{\evaluatorPhrase}              \>  \evaluator
-		}{}
-	\end{tabbing}
-	\end{spacing}
+	\vspace*{5mm}
+
+	{\LARGE Ausarbeitung für das Integrationsseminar \\ im Studiengang Allgemeine Informatik} \\
+
+	\vspace*{20mm}
+
+	\hfill {\large September 2024}\\
 \end{titlepage}

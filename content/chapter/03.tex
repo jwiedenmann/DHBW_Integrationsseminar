@@ -2,13 +2,71 @@
 
 \chapter{Methodik}
 
-\section{Forschungsdesign}
+Um die Fragestellung „Kann ein LLM eine Vorauswahl von Bewerber treffen“ zu beantworten, 
+wurde ein experimenteller Ansatz gewählt, welcher anschließend qualitativ bewertet wird. 
+Das Experiment simuliert einen Chatbot mittels LLM, in dem das LLM dazu genutzt wird, 
+eine Reihe generierter Fragen auf Basis der Stellenausschreibungen,
+Anweisungen und den Antworten des Bewerbers zu generieren und anhand den Antworten des Bewerbers 
+diesen zu bewerten. Ziel des Experiments ist es zu testen, ob das LLM durch diese Interaktionen 
+sinnvolle Rückschlüsse auf die Eignung der Bewerber ziehen und eine Vorauswahl treffen kann. 
+Die zentrale Hypothese lautet, dass ein LLM, basierend auf den Antworten der Bewerber, 
+in der Lage ist automatisierte Bewertungen zu generieren die es ermöglichen weniger geeignete 
+Bewerber frühzeitig auszusortieren. //
 
-\section{Datenerhebung}
 
-\section{Datenanalyse}
+Das Experiment wurde unter kontrollierten Bedingungen durchgeführt, 
+da die Teilnehmenden nicht aktiv auf Jobsuche waren. 
+Das LLM wurde mittels initialen Prompt bei allen Teilnehmenden auf dieselbe Stellenbeschreibung 
+für eine IT-Position als .NET-Softwareentwickler angepasst. Der initiale Prompt blieb in allen 
+Durchläufen für die unterschiedlichen Teilnehmenden gleich. Die Teilnehmer konnten vor und während 
+des Experiments den initialen Prompt und die Stellenbeschreibung nicht einsehen. 
+Der initiale Prompt des LLM folgte dem „Flipped Interaction“-Muster, bei dem das LLM basierend 
+auf der Stellenbeschreibung und Anweisungen spezifische Fragen stellte, bis es in der Lage war 
+eine Bewerutng abzugeben [1]. Ziel war es, die Eignung der Bewerber in den Disziplinen 
+„Fachliche Kompetenz“, „Problemlösefähigkeit“, „Konfliktlösefähigkeit“ und „Teamfähigkeit“ zu 
+bewerten. Das LLM wurde angewiesen, für jede dieser Disziplinen eine Punktzahl zwischen 1 und 10 
+zu vergeben, basierend auf einer qualitativen Auswertung der Antworten. Zudem wurde das LLM 
+angewiesen eine Gesamtbewertung des Bewerbers zwischen 1 und 10 festzulegen. Der verwendete Prompt 
+ist in Anlage A einzusehen. //
 
-\section{Ergebnisse}
+
+Das Experiment wurde an einem Computer durchgeführt, auf dem ausschließlich die vom LLM 
+generierten Fragen sowie ein Eingabefeld für die Antworten der Teilnehmenden angezeigt wurden. 
+Diese standardisierte Umgebung wurde bewusst gewählt, um eine gleichbleibende Interaktion zwischen 
+den Teilnehmenden und dem LLM zu gewährleisten und so die Vergleichbarkeit der Ergebnisse 
+sicherzustellen. //
+
+
+Zehn Personen im Alter zwischen 21 und 35 Jahren nahmen an dem Experiment teil. 
+Sieben dieser Personen kamen aus der IT-Branche, wobei nicht alle als .NET-Entwickler tätig waren, 
+jedoch potenziell die Anforderungen der zu bewertenden Stelle erfüllten. Diese Gruppe 
+repräsentierte die Zielgruppe, die das LLM in der Bewerbervorauswahl nicht aussortieren sollte und 
+deren Antworten mit höheren Scores bewertet werden sollten. Zusätzlich wurde eine Kontrollgruppe 
+bestehend aus drei Personen einbezogen, die wenig, bis keinen Bezug zur Softwareentwicklung hatten. 
+Diese Gruppe diente dazu, das Verhalten des LLM in einem weniger fachspezifischen Kontext zu 
+testen und als Vergleichsgruppe zu den IT-Teilnehmern zu fungieren. //
+
+
+Die einzelnen Experimente fand im Zeitraum vom 01.09.2024 bis zum 07.09.2024 statt. Den 
+Teilnehmenden wurde vor Beginn des Experiments erklärt, dass sie sich auf die ausgeschriebene 
+Stelle als .NET-Entwickler bewerben und nun das Screen-Interview durchführen, wobei die Annahme 
+galt, dass sie den Job erhalten möchten. Die vom LLM generierten Fragen sowie die Antworten der 
+Teilnehmer wurden in deutscher Sprache verfasst. Die Teilnehmer beantworteten so lange die Fragen, 
+bis das LLM die Bewertung ausgab. //
+
+
+Die erhobenen Daten umfassten die generierten Fragen des LLMs, die Antworten der Teilnehmenden auf 
+die Fragen sowie die abschließenden Bewertungen. Diese bestanden aus einer numerischen Punktzahl 
+für jede Disziplin und einer kurzen textuellen Zusammenfassung der Leistung des Bewerbers. 
+Diese Daten wurden qualitativ ausgewertet, um zu analysieren, inwieweit das LLM in der Lage war, 
+fundierte, stellenbezogene Rückschlüsse auf die Eignung der Teilnehmenden zu ziehen. Der 
+Schwerpunkt der Analyse lag auf der Untersuchung der Interaktion zwischen den generierten Fragen 
+des LLM, den Antworten der Teilnehmenden und der Bewertung des LLM, um Rückschlüsse auf die 
+Effektivität der Vorauswahl durch das LLM zu ziehen. //
+
+
+[1] A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT
+arXiv.2302.11382
 
 
 
